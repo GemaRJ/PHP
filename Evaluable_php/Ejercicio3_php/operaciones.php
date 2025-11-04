@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>operaciones.php</title>
+</head>
+<body>
+    <h1>¡¡¡ Bienvenido a la Página WEB: OPERACIONES.PHP !!!</h1>
+    <form action="datos_operaciones.php" method="post">
+        
+        <label for="numero1">Número 1:</label>
+        <input type="number" id="numero1" name="numero1" required><br><br>
+
+        <label for="numero2">Número 2:</label>
+        <input type="number" id="numero2" name="numero2" required><br><br>
+
+        <input type="radio" id="suma" name="operacion" value="suma" required>
+        <label for="suma">Suma</label><br>
+
+        <input type="radio" id="resta" name="operacion" value="resta">
+        <label for="resta">Resta</label><br>
+
+        <input type="radio" id="multiplicacion" name="operacion" value="multiplicacion">
+        <label for="multiplicacion">Multiplicación</label><br>
+
+        <input type="radio" id="division" name="operacion" value="division">
+        <label for="division">División</label><br><br>
+
+        <input type="submit" value="Enviar datos">
+     
+</body>
+</html>
+
