@@ -1,0 +1,217 @@
+<!-- 
+/* =====================================================
+   🧩 TABLA 1 — Operaciones principales con ARRAYS / LISTAS
+===================================================== */
+
+// ➕ Crear un array/lista
+let frutas = [];           // JavaScript
+frutas = [];               // Python
+// List<String> frutas = new ArrayList<>();  // Java
+// List<string> frutas = new List<string>(); // C#
+// $frutas = [];                          // PHP
+
+// ➕ Añadir elemento
+frutas.push("uva");        // JS
+// frutas.append("uva")     // Python
+// frutas.add("uva")        // Java
+// frutas.Add("uva")        // C#
+// array_push($frutas,"uva") // PHP
+
+// ➖ Eliminar último
+frutas.pop();              // JS
+// frutas.pop()             // Python
+// frutas.remove(size-1)    // Java
+// frutas.RemoveAt(Count-1) // C#
+// array_pop($frutas)        // PHP
+
+// ➖ Eliminar por posición o valor
+// frutas.splice(i,1)       // JS
+// frutas.remove(valor)     // Python
+// frutas.remove(valor)     // Java
+// frutas.Remove(valor)     // C#
+// unset($frutas[$i])       // PHP
+
+// 🔍 Buscar valor
+frutas.includes("uva");    // JS
+// "uva" in frutas           // Python
+// frutas.contains("uva")   // Java
+// frutas.Contains("uva")   // C#
+// in_array("uva",$frutas)  // PHP
+
+// 🔁 Recorrer lista
+frutas.forEach(f => console.log(f));  // JS
+// for f in frutas: print(f)           // Python
+// for(String f : frutas) System.out.println(f); // Java
+// foreach(var f in frutas) Console.WriteLine(f); // C#
+// foreach($frutas as $f) echo $f;     // PHP
+
+// 🔢 Contar elementos
+frutas.length;             // JS
+// len(frutas)              // Python
+// frutas.size()            // Java
+// frutas.Count             // C#
+// count($frutas)           // PHP
+
+// ↕️ Ordenar elementos
+frutas.sort();             // JS
+// frutas.sort() / sorted()  // Python
+// Collections.sort(frutas)  // Java
+// frutas.Sort()            // C#
+// sort($frutas)            // PHP
+
+// 🔁 Invertir orden
+frutas.reverse();          // JS
+// frutas.reverse()         // Python
+// Collections.reverse(frutas) // Java
+// frutas.Reverse()         // C#
+// array_reverse($frutas)   // PHP
+
+// 🎯 Buscar índice
+frutas.indexOf("uva");     // JS
+// frutas.index("uva")      // Python
+// frutas.indexOf("uva")    // Java
+// frutas.IndexOf("uva")    // C#
+// array_search("uva",$frutas) // PHP
+
+
+/* =====================================================
+   🔍 TABLA 2 — Métodos / Funciones de BÚSQUEDA y VALIDACIÓN
+===================================================== */
+
+// isNaN() — Comprueba si un valor NO es numérico
+isNaN(valor);              // JS
+// math.isnan(valor)        // Python
+// Double.isNaN(valor)     // Java
+// Double.IsNaN(valor)     // C#
+// is_nan(valor)            // PHP
+
+// some() — Devuelve true si algún elemento cumple condición
+frutas.some(f => f==="uva"); // JS
+// any(x=="uva" for x in frutas) // Python
+// ❌ Java requiere bucle
+// Any(f=>f=="uva")           // C#
+// ❌ PHP necesita array_filter
+
+// find() — Devuelve el primer elemento que cumple condición
+frutas.find(f => f==="uva"); // JS
+// next((x for x in frutas if x=="uva"), None) // Python
+// frutas.stream().filter(...).findFirst()   // Java
+// frutas.FirstOrDefault(f => f=="uva")     // C#
+// reset(array_filter($frutas, ...))        // PHP
+
+// filter() — Devuelve todas las coincidencias
+frutas.filter(f => f==="uva"); // JS
+// [x for x in frutas if x=="uva"] // Python
+// frutas.stream().filter(...)     // Java
+// frutas.Where(f => f=="uva")    // C#
+// array_filter($frutas, ...)      // PHP
+
+// includes() — Comprueba si un valor existe
+frutas.includes("uva");      // JS
+// "uva" in frutas            // Python
+// frutas.contains("uva")     // Java
+// frutas.Contains("uva")     // C#
+// in_array("uva",$frutas)    // PHP
+
+// indexOf() — Devuelve la posición del valor
+frutas.indexOf("uva");       // JS
+// frutas.index("uva")        // Python
+// frutas.indexOf("uva")      // Java
+// frutas.IndexOf("uva")      // C#
+// array_search("uva",$frutas) // PHP
+
+
+/* =====================================================
+   🎲 TABLA 3 — Generación de NÚMEROS ALEATORIOS
+===================================================== */
+
+// 🔢 Número aleatorio 0-1
+Math.random();               // JS
+// random.random()            // Python
+// Math.random()              // Java
+// Random.NextDouble()        // C#
+// lcg_value()                // PHP
+
+// 🎯 Número entero 1-N
+Math.floor(Math.random()*N)+1;   // JS
+// random.randint(1,N)           // Python
+// new Random().nextInt(N)+1     // Java
+// new Random().Next(1,N+1)      // C#
+// rand(1,N)                      // PHP
+
+// 🎲 Número en rango (min–max)
+Math.floor(Math.random()*(max-min+1))+min; // JS
+// random.randint(min,max)      // Python
+// ThreadLocalRandom.current().nextInt(min,max+1) // Java
+// Random.Next(min,max+1)       // C#
+// mt_rand(min,max)             // PHP
+
+
+/* =====================================================
+   🧮 TABLA 4 — Operadores y Estructuras de Control
+===================================================== */
+
+// ⚙️ Asignación
+let x = 5;  // JS, Python, Java, C#, PHP
+
+// ➕ Aritméticos
+let suma = 5+3; // + - * / % **
+
+// 🔄 Comparación
+if(x==5){ }  // == != > < >= <=
+
+// ⚖️ Lógicos
+if(x>0 && x<10){ } // JS, Java, C#
+# Python: if x>0 and x<10:
+! // Negación
+
+// 🧠 Condicional IF
+if(x>0){ console.log("OK"); } // JS
+# if x>0: print("OK")           // Python
+
+// 🔁 Bucle FOR
+for(let i=0;i<5;i++){ }        // JS
+for i in range(5):              // Python
+for(int i=0;i<5;i++){ }         // Java/C#
+for($i=0;$i<5;$i++){ }          // PHP
+
+// 🔁 Bucle WHILE
+while(cond){ }                  // JS, Java, C#, PHP
+while cond:                     // Python
+
+
+/* =====================================================
+   💬 TABLA 5 — Mostrar Datos y Mensajes
+===================================================== */
+
+console.log("Hola");         // Consola JS
+print("Hola");               // Python
+System.out.println("Hola");  // Java
+Console.WriteLine("Hola");   // C#
+echo "Hola";                 // PHP
+
+alert("Hola");               // JS ventana emergente
+Swal.fire({title:"Hola"});   // JS con SweetAlert2
+
+
+/* =====================================================
+   🧠 TABLA 6 — Comentarios y Funciones
+===================================================== */
+
+// 💬 Comentario una línea
+// JS, Java, C#, PHP
+# Python
+
+// 💬 Comentario multilínea
+/* JS, Java, C#, PHP */
+/* ... */
+""" Python ... """
+
+// ⚙️ Declarar función
+function sumar(a,b){ return a+b; }        // JS
+def sumar(a,b): return a+b                 // Python
+int sumar(int a,int b){ return a+b; }     // Java
+int Sumar(int a,int b){ return a+b; }     // C#
+function sumar($a,$b){ return $a+$b; }    // PHP
+ 
+-->
