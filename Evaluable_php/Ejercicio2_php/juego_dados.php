@@ -1,31 +1,5 @@
 <?php
 
-echo "<h1>¡¡¡ Bienvenido a Desarrollo Web en Entorno Servidor !!!</h1>";
-echo "<h2>Ejercicio-2: Juego de Dados para dos jugadores.</h2>";
-
-echo "<p>El objetivo de este ejercicio es crear un programa en PHP que simule un juego de dados para dos jugadores. 
-En lugar de un dado, cada jugador lanzará 5 dados y se almacenarán los resultados en dos vectores (o listas). 
-Después de cada tirada, el programa determinará quién gana según las reglas del juego y mostrará el resultado.</p>";
-
-echo "<p><strong>Lanzamiento de Dados:</strong><br>
-Cada jugador lanzará 5 dados. Puedes usar la función rand() para simular el lanzamiento de un dado de seis caras (valores entre 1 y 6).
-Almacena los resultados de los dos jugadores en dos vectores, uno para cada jugador.</p>";
-
-echo "<p><strong>Determinación del Ganador:</strong><br>
-Después de cada tirada, compara los resultados de ambos jugadores.<br>
-• Suma los valores obtenidos en los 5 dados de cada jugador.<br>
-• El jugador con la suma total más alta gana la ronda.<br>
-• Si ambos jugadores tienen la misma suma total, la ronda se considera un empate.<br>
-Muestra los resultados después de cada ronda, indicando quién ganó o si hubo un empate.<br>
-Lleva un registro de las rondas ganadas por cada jugador a lo largo del juego.</p>";
-
-echo "<p>Utiliza funciones en PHP para estructurar tu código y hacerlo más legible. 
-Proporciona una salida clara que indique los resultados de cada ronda y el progreso del juego.</p>";
-
-echo "---------------------------------------------------------------------------<br>";
-echo "---------------------------------------------------------------------------<br>";
-
-
 // Función para lanzar los dados
 function lanzarDados($cantidad) {
     $dados = array();
