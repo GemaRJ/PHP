@@ -1,5 +1,5 @@
 <?php
-// http://localhost/PHP/07_Arrays_php/index07.php
+
 // ==============================
 // ARRAYS EN PHP
 // ==============================

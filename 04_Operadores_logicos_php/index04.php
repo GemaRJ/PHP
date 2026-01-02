@@ -1,10 +1,10 @@
 <?php
 
 // 04_OperadoresLogicos.php
-//http://localhost/PHP/04_Operadores_logicos_php/index04.php
-// ==============================
+
+
 // OPERADORES LÓGICOS EN PHP
-// ==============================
+
 
 // Los operadores lógicos sirven para combinar o negar condiciones.
 // Su resultado siempre será un valor booleano: true (verdadero) o false (falso)
@@ -13,17 +13,16 @@
 // || (OR): Devuelve true si AL MENOS una condición es verdadera
 // !  (NOT): Invierte el valor lógico (true → false, false → true)
 
-// ==============================
 // EJEMPLO BASE
-// ==============================
+
 
 // Definimos dos variables de ejemplo
 $edad = 25;
 $tieneCarnet = true;
 
-// ==============================
+
 // AND (&&)
-// ==============================
+
 echo "=== Operador AND (&&) ===\n";
 
 // Ambas condiciones son verdaderas: edad >= 18 es true y tieneCarnet también es true
@@ -33,9 +32,9 @@ var_dump($edad >= 18 && $tieneCarnet); // true
 // En este caso, la segunda condición es false, así que el resultado total será false
 var_dump($edad >= 18 && false); // false
 
-// ==============================
+
 // OR (||)
-// ==============================
+
 echo "\n=== Operador OR (||) ===\n";
 
 // Si al menos una de las condiciones es verdadera, el resultado será true
@@ -45,9 +44,9 @@ var_dump($edad >= 18 || $tieneCarnet); // true
 // En este caso, ambas condiciones son falsas → resultado false
 var_dump(false || false); // false
 
-// ==============================
+
 // NOT (!)
-// ==============================
+
 echo "\n=== Operador NOT (!) ===\n";
 
 // NOT invierte el resultado lógico
@@ -55,9 +54,9 @@ echo "\n=== Operador NOT (!) ===\n";
 $esMenor = !($edad >= 18);
 var_dump($esMenor); // false
 
-// ==============================
+
 // COMBINACIÓN DE OPERADORES
-// ==============================
+
 echo "\n=== Combinación de operadores ===\n";
 
 // Creamos una variable extra para ver cómo se combinan varios operadores
@@ -72,9 +71,9 @@ $puedeConducir = ($edad >= 18 && $tieneCarnet) || $tienePermisoPadres;
 echo "¿Puede conducir? ";
 var_dump($puedeConducir); // true
 
-// ==============================
+
 // EJEMPLO PRÁCTICO
-// ==============================
+
 echo "\n=== Ejemplo práctico ===\n";
 
 // Creamos variables con una nota y porcentaje de asistencia
@@ -92,9 +91,9 @@ if ($aprobado) {
     echo "Alumno SUSPENDIDO \n";
 }
 
-// ==============================
+
 // OTRO EJEMPLO CON OR (||)
-// ==============================
+
 echo "\n=== Ejemplo con OR ===\n";
 
 // Si tiene entrada o es invitado, podrá acceder al evento
@@ -108,9 +107,8 @@ if ($tieneEntrada || $esInvitado) {
     echo "No puede acceder \n";
 }
 
-// ==============================
+
 // EJEMPLO CON NOT (!)
-// ==============================
 echo "\n=== Ejemplo con NOT ===\n";
 
 // Si el usuario NO está conectado (!conectado), se muestra un mensaje de alerta

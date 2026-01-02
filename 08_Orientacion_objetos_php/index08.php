@@ -1,5 +1,5 @@
 <?php
-// http://localhost/PHP/08_Orientacion_objetos_php/index08.php
+
 // ==============================
 // OBJETOS EN PHP
 // ==============================

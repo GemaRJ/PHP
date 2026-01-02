@@ -1,17 +1,17 @@
 <?php
-// http://localhost/PHP/01_Variables_php/index01.php
+
 
 // 01_Variables.php
 // VARIABLES Y TIPOS DE DATOS EN PHP
-// ========================================
+
 
 // Explicación general de variables en PHP
 // PHP es un lenguaje no tipado estrictamente
 // El tipo de dato lo determina el valor que se le asigna
 
-// ========================================
+
 // FORMAS DE DECLARAR VARIABLES
-// ========================================
+
 
 // 1️. Constantes → Constante (NO se puede modificar)
 define("NOMBRE_ASIGNATURA", "Desarrollo Cliente");
@@ -26,9 +26,9 @@ if (true) {
     echo "$nombre\n";    // Muestra "Carlos"
 }
 
-// ========================================
+
 // DIFERENCIAS ENTRE VARIABLES Y CONSTANTES
-// ========================================
+
 
 // Variables normales → permite reasignar
 $helloWorld = "¡Hola, PHP!";
@@ -41,9 +41,9 @@ echo "$helloWorld\n"; // Muestra: ¡Hola de nuevo, PHP!
 define("HELLO_WORLD_CONST", "¡Hola, PHP Constante!");
 echo HELLO_WORLD_CONST . "\n"; // Muestra: ¡Hola, PHP Constante!
 
-// ========================================
+
 // TIPOS DE VARIABLES Y EJEMPLOS
-// ========================================
+
 
 $alias = "Enzo";                      // String (cadena de texto)
 $edad = 37;                            // Integer
@@ -55,9 +55,9 @@ $mail = "gema@ue.com";                 // String
 $puesto = null;                        // Null (valor intencionadamente vacío)
 $conocimiento = null;                  // Simulamos undefined con null
 
-// ========================================
+
 // EJEMPLOS DE SALIDA
-// ========================================
+
 
 // Forma tradicional (concatenación)
 echo "Mi nombre es " . $nombre . "\n";
@@ -74,9 +74,9 @@ echo "El tipo de la altura es " . gettype($altura) . "\n"; // double
 echo "El tipo del puesto es " . gettype($puesto) . "\n"; // NULL
 echo "El tipo del conocimiento es " . gettype($conocimiento) . "\n"; // NULL
 
-// ========================================
+
 // NaN → Not a Number
-// ========================================
+
 
 // Sirve para detectar valores que no son numéricos
 $noEsNumero = "abc" / 2; // Resultado: Warning + NaN en PHP

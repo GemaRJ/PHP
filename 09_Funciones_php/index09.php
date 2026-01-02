@@ -1,8 +1,8 @@
 <?php
-// http://localhost/PHP/09_Funciones_php/index09.php
-// ==============================
+
+
 // FUNCIONES EN PHP
-// ==============================
+
 
 // 1. Función tradicional
 function saludar($nombre) {
@@ -70,9 +70,9 @@ function factorial($n) {
 }
 echo "Factorial de 5: " . factorial(5) . "\n";
 
-// ==============================
+
 // FUNCIONES ASÍNCRONAS EN PHP
-// ==============================
+
 // PHP no tiene async/await como JS, pero podemos simular esperas con sleep() o usar promesas en librerías externas.
 // Aquí hacemos un ejemplo simple con sleep:
 

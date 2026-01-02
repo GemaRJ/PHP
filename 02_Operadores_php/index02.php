@@ -1,10 +1,10 @@
 <?php
 
-// http://localhost/PHP/02_Operadores_php/index02.php
+
 
 
 // Ejemplos de operadores aritméticos y de asignación
-// ===================================================
+
 
 // Operador de Asignación (=)
 $a = 1;
@@ -51,9 +51,9 @@ $divisor2 = 3;
 $resto = $numero % $divisor2;
 echo "(%) El resto de dividir $numero entre $divisor2 es $resto\n"; // 1
 
-// ===================================================
+
 // Ejemplo combinado
-// ===================================================
+
 $x = 5;
 $y = 2;
 
@@ -67,9 +67,9 @@ echo "x % y = " . ($x % $y) . "\n"; // Módulo
 echo "++x = " . (++$x) . "\n";     // Incremento previo
 echo "--y = " . (--$y) . "\n";     // Decremento previo
 
-// ===================================================
-// 🔹 Notas finales
-// ===================================================
+
+//  Notas finales
+
 /*
 Resumen de operadores aritméticos:
 

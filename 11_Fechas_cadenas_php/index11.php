@@ -1,10 +1,9 @@
 <?php
-// /PHP/11_Fechas_cadenas_php/index11.php
-// ==============================
-// FECHAS Y CADENAS EN PHP
-// ==============================
 
-// ======== FECHAS ========
+// FECHAS Y CADENAS EN PHP
+
+
+// FECHAS 
 
 // Fecha actual
 $fechaActual = new DateTime(); // Objeto DateTime con fecha y hora actual
@@ -31,7 +30,7 @@ echo "Formato ISO 8601: " . $fechaActual->format(DateTime::ATOM) . "\n";
 $fechaActual->setDate($fechaActual->format('Y'), 1, $fechaActual->format('d'));
 echo "Mes modificado: " . $fechaActual->format('m') . "\n";
 
-// ======== CADENAS ========
+// CADENAS 
 
 $texto = "Hola Mundo";
 

@@ -1,15 +1,15 @@
 <?php
-// 03_OperadoresComparacion.php
-// ==============================
+
+
 // OPERADORES DE COMPARACIÓN EN PHP
-// ==============================
+
 
 // Los operadores de comparación se usan para evaluar condiciones
 // Devuelven siempre un valor booleano: true (verdadero) o false (falso)
 
-// ===================================================
+
 // === IGUALDAD ESTRICTA (===)
-// ===================================================
+
 // Compara valor y tipo de dato. Ambos deben coincidir para devolver true.
 $numero = 5;     // integer
 $texto = "5";    // string
@@ -25,18 +25,18 @@ var_dump($texto === "5");
 // $numero === $texto → false porque el tipo es distinto (integer vs string)
 var_dump($numero === $texto); 
 
-// ===================================================
+
 // == IGUALDAD NO ESTRICTA (==)
-// ===================================================
+
 // Compara solo el valor. PHP convierte los tipos si es necesario.
 echo "\n== Igualdad no estricta ==\n";
 
 // $numero == $texto → true porque "5" se convierte a número antes de comparar
 var_dump($numero == $texto); 
 
-// ===================================================
+
 // !== DIFERENTE ESTRICTO
-// ===================================================
+
 // Compara valor y tipo; devuelve true si NO coinciden ambos
 echo "\n!== Diferente estricto ==\n";
 
@@ -46,18 +46,18 @@ var_dump($numero !== $texto);
 // $numero !== 5 → false porque valor y tipo son iguales
 var_dump($numero !== 5); 
 
-// ===================================================
+
 // != DIFERENTE NO ESTRICTO
-// ===================================================
+
 // Compara solo el valor, ignora el tipo
 echo "\n!= Diferente no estricto ==\n";
 
 // $numero != $texto → false porque el valor es igual
 var_dump($numero != $texto); 
 
-// ===================================================
+
 // OPERADORES RELACIONALES: > , < , >= , <=
-// ===================================================
+
 $edad = 18;
 
 echo "\n> , < , >= , <=\n";
@@ -74,9 +74,9 @@ var_dump($edad < 30);  // true → 18 es menor que 30
 // Menor o igual que
 var_dump($edad <= 17); // false → 18 no es menor o igual a 17
 
-// ===================================================
+
 // COMPARACIÓN DE CADENAS
-// ===================================================
+
 // Las cadenas se comparan alfabéticamente según su valor ASCII/Unicode
 echo "\nComparación entre cadenas:\n";
 
@@ -86,9 +86,9 @@ var_dump("a" < "b");
 // "h" viene después de "a" → true
 var_dump("hola" > "adiós"); 
 
-// ===================================================
+
 // COMPARACIÓN CON BOOLEANOS
-// ===================================================
+
 echo "\nComparación con booleanos:\n";
 
 // true se convierte a 1 al compararse con números → true
@@ -100,9 +100,9 @@ var_dump(false === 0);
 // false == 0 → true porque PHP convierte false a 0
 var_dump(false == 0);  
 
-// ===================================================
+
 // EJEMPLO PRÁCTICO CON CONDICIONAL
-// ===================================================
+
 echo "\nEjemplo práctico:\n";
 
 $nota = 7;
@@ -114,9 +114,9 @@ if ($nota >= 5) {
     echo "Has suspendido 😢\n";
 }
 
-// ===================================================
+
 // 🔹 Resumen
-// ===================================================
+
 /*
 Operadores de comparación en PHP:
 
