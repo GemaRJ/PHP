@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+main.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 15px;
+}
+
+h1.text-center {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+}
+
+/* Cards */
+.card {
+    background-color: #fff;
+    padding: 20px 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.08);
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #3498db;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+h3 {
+    color: #2980b9;
+    margin-bottom: 10px;
+}
+
+p {
+    margin: 8px 0;
+}
+
+/* Tabla de libros */
+table.tabla-libros {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+table.tabla-libros th,
+table.tabla-libros td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+table.tabla-libros th {
+    background-color: #3498db;
+    color: #fff;
+}
+
+table.tabla-libros tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Colores de mensajes */
+p[style*="color:green"] { font-weight: bold; }
+p[style*="color:orange"] { font-weight: bold; }
+p[style*="color:blue"] { font-style: italic; }
+p[style*="color:red"] { font-weight: bold; }
