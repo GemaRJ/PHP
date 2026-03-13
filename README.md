@@ -32,24 +32,27 @@ Ejercicios que reflejan **práctica diaria y aprendizaje progresivo de PHP**:
 
 ---
 
-## 🚀 Proyectos Personales
+# 🏠 Sistema de Gestión Inmobiliaria (MVC)
 
-> Todos los proyectos muestran la **aplicación práctica de los conceptos aprendidos**, desde ejercicios sencillos hasta aplicaciones completas.
-
-Carpeta completa de proyectos personales:  
-[📂 PROYECTOS PERSONALES](https://github.com/GemaRJ/PHP/tree/main/PROYECTOS%20PERSONALES)  
-
-### Proyecto destacado: Inmobiliaria
-
-- Proyecto **completo de backend con PHP y MySQL**.  
-- Funcionalidades: gestión de propiedades, usuarios, consultas dinámicas y búsqueda avanzada.  
-- Conexión a **base de datos real**, mostrando dominio en:
-  - Consultas SQL
-  - Inserción, actualización y eliminación de registros
-  - Relación entre tablas (propiedades, clientes, agentes)  
-- Interfaz sencilla pero funcional en **HTML y CSS**, con scripts para validación y dinamismo.  
-- Este proyecto refleja tu capacidad de crear sistemas completos de **gestión de información** y aplicar conocimientos de backend a proyectos reales.
-
-> Otros proyectos personales en la carpeta muestran ejercicios, mini-aplicaciones y ejemplos prácticos de PHP aplicados en distintas temáticas.
+Este proyecto es una plataforma de gestión inmobiliaria desarrollada en **PHP y MySQL**, estructurada bajo el patrón **Modelo-Vista-Controlador (MVC)**. Permite la administración integral de propiedades y usuarios mediante un sistema de permisos basado en roles.
 
 ---
+
+## 📸 Galería del Proyecto
+
+**[Ver fotos del sistema](https://github.com/GemaRJ/PHP/tree/main/PROYECTOS%20PERSONALES/Im%C3%A1genes%20Demo%20Inmobiliria)**
+
+---
+
+## 🔐 Credenciales de Acceso (Demo)
+
+Para probar las diferentes funcionalidades y la gestión de permisos según el rol, puedes utilizar los siguientes usuarios:
+
+| Perfil | Email | Contraseña | Rol |
+| :--- | :--- | :--- | :--- |
+| **GEMA** | ADMIN@GEMA.COM | 1234 | Administrador |
+| **ENZO** | ENZO@ENZO.COM | 1234  | Vendedor |
+| **CARLOS** | CARLOS@CARLOS.COM | 1234  | Comprador |
+
+---
+
