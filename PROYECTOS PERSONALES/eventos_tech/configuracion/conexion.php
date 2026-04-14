@@ -2,8 +2,8 @@
 
 $host = "localhost";
 $dbname = "eventos_tech";
-$user = "root";
-$password = "rootroot";
+$user = "";
+$password = "";
 
 try {
 
